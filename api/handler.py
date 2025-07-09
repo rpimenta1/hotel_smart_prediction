@@ -5,8 +5,14 @@ import json
 import pickle
 from api.HotelSmart.HotelSmart import PredictCancellation
 
-model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'final_model.pkl')
-model = pickle.load(open(model_path, 'rb'))
+#model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'final_model.pkl')
+#model = pickle.load(open(model_path, 'rb'))
+
+base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+model_path = os.path.join(base_dir, 'model', 'final_model.pkl')
+
+with open(model_path, 'rb') as f:
+    model = pickle.load(f)
 
 app = Flask(__name__)
 
