@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import json
 import pickle
-from HotelSmart.HotelSmart import PredictCancellation
+from api.HotelSmart.HotelSmart import PredictCancellation
 
 model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'final_model.pkl')
 model = pickle.load(open(model_path, 'rb'))
