@@ -3,16 +3,16 @@ import os
 import pandas as pd
 import json
 import pickle
-from api.HotelSmart.HotelSmart import PredictCancellation
+from HotelSmart.HotelSmart import PredictCancellation
+import traceback
 
 #model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'final_model.pkl')
 #model = pickle.load(open(model_path, 'rb'))
 
-base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-model_path = os.path.join(base_dir, 'model', 'final_model.pkl')
 
-with open(model_path, 'rb') as f:
-    model = pickle.load(f)
+# Caminho do modelo
+model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'final_model.pkl')
+model = pickle.load(open(model_path, 'rb'))
 
 app = Flask(__name__)
 
@@ -39,7 +39,8 @@ def cancellation_predict():
             return Response('{}', status=200, mimetype='application/json')
 
     except Exception as e:
-        print(f"❌ ERRO NA API: {e}")
+        print("❌ ERRO NA API:")
+        traceback.print_exc()  # ✅ Mostra o erro completo no log do Koyeb
         return Response(f'{{"error": "{str(e)}"}}', status=500, mimetype='application/json')
 
 
