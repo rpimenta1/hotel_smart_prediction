@@ -6,13 +6,13 @@ import json
 
 class PredictCancellation(object):
     def __init__(self):
-        self.average_ticket = pickle.load(open('/parameter/average_ticket_scaler.pkl', 'rb'))
-        self.avg_price_per_room = pickle.load(open('/parameter/avg_price_per_room_scaler.pkl', 'rb'))
-        self.lead_time = pickle.load(open('/parameter/lead_time_scaler.pkl', 'rb'))
-        self.market_segment_type = pickle.load(open('/parameter/market_segment_type_encoder.pkl', 'rb'))
-        self.price_category = pickle.load(open('/parameter/price_category_encoder.pkl', 'rb'))
-        self.room_type_reserved = pickle.load(open('/parameter/room_type_reserved_encoder.pkl', 'rb'))
-        self.type_of_meal_plan = pickle.load(open('/parameter/type_of_meal_plan_encoder.pkl', 'rb'))
+        self.average_ticket = pickle.load(open(     '../../parameter/average_ticket_scaler.pkl', 'rb'))
+        self.avg_price_per_room = pickle.load(open( '../../parameter/avg_price_per_room_scaler.pkl', 'rb'))
+        self.lead_time = pickle.load(open(          '../../parameter/lead_time_scaler.pkl', 'rb'))
+        self.market_segment_type = pickle.load(open('../../parameter/market_segment_type_encoder.pkl', 'rb'))
+        self.price_category = pickle.load(open(     '../../parameter/price_category_encoder.pkl', 'rb'))
+        self.room_type_reserved = pickle.load(open( '../../parameter/room_type_reserved_encoder.pkl', 'rb'))
+        self.type_of_meal_plan = pickle.load(open(  '../../parameter/type_of_meal_plan_encoder.pkl', 'rb'))
 
     def convert_binary_columns(self, df):
         binary_cols = ['repeated_guest', 'required_car_parking_space']
