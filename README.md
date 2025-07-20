@@ -44,6 +44,7 @@ This project is not only about about predictive accuracy but also, it’s about 
 - Bivariate analysis
 - Multivariable Analysis
 - Elbow Analysis
+- Confusion Matrix
 
 ## 🚀 Next Steps
 
