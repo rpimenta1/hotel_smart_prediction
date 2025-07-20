@@ -1,10 +1,10 @@
 # Hotel Booking Cancellation Prediction
 
-## 🏨 Why Do Hotel Bookings Get Canceled — and How Can We Predict It?
+## 🏨 Why Do Hotel Bookings Get Canceled and How Can We Predict It?
 
-In recent years, **online hotel booking platforms** have completely transformed how people reserve their stays. With just a few clicks, travelers can book, reschedule, or cancel a reservation — all in real time. But this convenience comes with a cost.
+In recent years, **online hotel booking platforms** have completely transformed how people reserve their stays. With just a few clicks, travelers can book, reschedule, or cancel a reservation. But this convenience comes with a cost.
 
-Today, a **large number of bookings end up being canceled**, either intentionally by customers or through no-shows. The reasons? They vary — from last-minute changes of plans to simple schedule conflicts. And with the widespread availability of **free or low-cost cancellation policies**, guests are empowered to make flexible decisions. Great for them — but potentially risky for hotel operations.
+Today, a **large number of bookings end up being canceled**, either intentionally by customers or through no-shows. The reasons? They vary from last-minute changes of plans to simple schedule conflicts. And with the widespread availability of **free or low-cost cancellation policies**, guests are empowered to make flexible decisions. Great for them but potentially risky for hotel operations.
 
 While guests enjoy the freedom to change their minds, **hotels face the consequences**: empty rooms and increase of costs. Each canceled booking can cost a hotel **an average of R$3,500**, and with **50,000 reservations expected next year**, that risk adds up fast.
 
